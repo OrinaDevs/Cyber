@@ -28,13 +28,13 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="{% url 'services' %}">Services</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -119,12 +119,13 @@
                     <img src="static/images/printing.jpg" alt="printing">
                     <p>Scanning Services</p>
                 </div>
+                <a href="">more...</a>
             </div>
         </div>
     </div>
 
 <!--Footer-->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -137,13 +138,13 @@
                     <address>
                         Kisii, <br>
                         Opp. DC's Office, <br>
-                        <i class="fa-solid fa-phone"></i>072775255 <br>
+                        <i class="fa-solid fa-phone"></i>0729752550 <br>
                         <i class="fa-solid fa-envelope"></i><a href="mailto:401cybercafe@gmail.com">401cybercafe@gmail.com</a>
                     </address>
                 </div>
             </div>
             <div class="text-center">
-                <p>&copy; {{year}} 401 Cyber Cafe. All Rights Reserved</p>
+                <p>&copy; {{ year }} 401 Cyber Cafe. All Rights Reserved</p>
             </div>
         </div>
     </footer>
