@@ -13,6 +13,5 @@ def index(request):
     return render(request, 'index.html', context)
 
 def services(request):
-    template = loader.get_template('services.html')
-    return HttpResponse(template.render())
+    return render(request, 'services.html')
     
